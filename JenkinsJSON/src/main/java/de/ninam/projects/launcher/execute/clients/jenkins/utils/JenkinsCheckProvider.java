@@ -138,7 +138,6 @@ public class JenkinsCheckProvider implements CheckProvider {
 
     }
 
-
     private JenkinsCheck createCheck(JenkinsJob jenkinsJob) {
 
         String jobName = jenkinsJob.getName();
