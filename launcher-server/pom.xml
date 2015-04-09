@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>launcherserver</artifactId>
+    <artifactId>launcher-server</artifactId>
 
     <dependencies>
         <dependency>

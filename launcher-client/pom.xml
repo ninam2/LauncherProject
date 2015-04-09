@@ -12,7 +12,7 @@
     <!---->
 
 
-    <artifactId>launcherclient</artifactId>
+    <artifactId>launcher-client</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.google.guava</groupId>
