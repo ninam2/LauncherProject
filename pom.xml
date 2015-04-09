@@ -4,9 +4,9 @@
     <artifactId>launcher</artifactId>
     <version>0.1-SNAPSHOT</version>
     <modules>
-        <module>JenkinsJSON</module>
+        <module>jenkinsjson</module>
         <module>launcherclient</module>
-        <module>launcherServer</module>
+        <module>launcherserver</module>
     </modules>
     <packaging>pom</packaging>
     <!---->
