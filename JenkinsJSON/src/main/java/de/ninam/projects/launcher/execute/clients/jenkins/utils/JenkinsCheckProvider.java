@@ -61,7 +61,7 @@ public class JenkinsCheckProvider implements CheckProvider {
 
         final Page page;
         try {
-            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/CONS_CSC-IT/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
+            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/DEV_CSC-Sonar/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
         } catch (Exception e) {
             // does this need further processing? fix it if it fails :D
             log.error("could not load job list from jenkins");
@@ -83,7 +83,7 @@ public class JenkinsCheckProvider implements CheckProvider {
         int lastBuildNumber = builds.get(1).getNumber();
 
         try {
-            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/CONS_CSC-IT/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
+            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/DEV_CSC-Sonar/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
         } catch (Exception e) {
             // does this need further processing? fix it if it fails :D
             log.error("could not load job list from jenkins");
@@ -105,7 +105,7 @@ public class JenkinsCheckProvider implements CheckProvider {
         int lastBuildNumber = builds.get(0).getNumber();
 
         try {
-            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/CONS_CSC-IT/" + lastBuildNumber + "/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
+            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/DEV_CSC-Sonar/" + lastBuildNumber + "/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
         } catch (Exception e) {
             // does this need further processing? fix it if it fails :D
             log.error("could not load job list from jenkins");
@@ -128,7 +128,7 @@ public class JenkinsCheckProvider implements CheckProvider {
         int lastBuildNumber = builds.get(1).getNumber();
 
         try {
-            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/CONS_CSC-IT/" + lastBuildNumber + "/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
+            page = jenkinsClient.query("http://buildbox.axelspringer.de/jenkins/job/CSC/job/DEV_CSC-Sonar/" + lastBuildNumber + "/", PCP_JENKINS_USER_NAME, PCP_JENKINS_API_TOKEN, Page.class);
         } catch (Exception e) {
             // does this need further processing? fix it if it fails :D
             log.error("could not load job list from jenkins");

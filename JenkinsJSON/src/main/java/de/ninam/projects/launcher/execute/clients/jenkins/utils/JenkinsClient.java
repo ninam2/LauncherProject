@@ -15,7 +15,7 @@ import java.io.IOException;
 @Component
 public class JenkinsClient {
 
-    private static final String DEFAULT_PCP_JENKINS_HOST = "buildbox.axelspringer.de/jenkins/job/Launcher";
+    private static final String DEFAULT_PCP_JENKINS_HOST = "buildbox.axelspringer.de/jenkins/job/CSC";
 
     /**
      * The hostname is buildbox.axelspringer.de by default, but when running inside a docker container, the jenkins API cannot be accessed

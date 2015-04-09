@@ -26,6 +26,7 @@ public class CheckTest {
     JenkinsCheckProvider jenkinsCheckProvider;
 
     @Test
+
     public void testCheck() {
         List<Check> jenkinsChecks = jenkinsCheckProvider.provideChecks();
         jenkinsChecks.size();
